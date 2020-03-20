@@ -25,8 +25,8 @@ class Artist
     artist = @@all.find{|artist| artist.name == name}
     if artist == nil 
       artist = self.new(name)
-      artist
-    
-  end 
+    end 
+    @@all.last 
+  end
   
 end
