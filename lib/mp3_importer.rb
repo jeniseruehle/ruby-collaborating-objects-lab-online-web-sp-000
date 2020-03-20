@@ -6,7 +6,7 @@ class MP3Importer
   end 
   
   def files 
-    @files = Dir.entries(@path).select{\files
+    @files = Dir.entries(@path).select{|files| files.include?(".mp3")}
   end 
   
   def import 
